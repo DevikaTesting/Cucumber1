@@ -3,6 +3,10 @@
   <groupId>org.test</groupId>
   <artifactId>Cucumber</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+ <maven.compiler.target>1.7</maven.compiler.target>
+ <maven.compiler.target>1.7</maven.compiler.target>
+ </properties>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -29,6 +33,7 @@
     <artifactId>cucumber-java</artifactId>
     <version>4.2.0</version>
 </dependency>
+ 
   
   </dependencies>
 </project>

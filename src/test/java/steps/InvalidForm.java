@@ -3,6 +3,7 @@ package steps;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
 import cucumber.api.java.en.Given;
@@ -39,7 +40,7 @@ public class InvalidForm extends Home{
 
 	@Then("The user should see the error message")
 	public void the_user_should_see_the_error_message() {
-	    Assert.assertTrue(true);                                        
+		Assert.assertTrue(true);                                        
 	}
 
 

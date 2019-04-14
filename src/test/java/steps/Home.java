@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Home {
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	public WebDriver getId() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\KASTHURI\\eclipse workspce\\kasuma\\JavaProgram\\Driver\\chromedriver.exe");
@@ -15,6 +15,11 @@ public class Home {
 	public void loadUrl(String url) {
 	driver.get(url);
 	
+	}
+	
+	public void quitBrowser() {
+		driver.quit();
+
 	}
 }
 

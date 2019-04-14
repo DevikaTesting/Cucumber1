@@ -3,12 +3,14 @@ package steps;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
+
 
 public class InvalidData extends Home{
 	@Given("the user is in the add tariff plan")
@@ -37,7 +39,10 @@ public class InvalidData extends Home{
 
 	@Then("The user should see the Error message")
 	public void the_user_should_see_the_Error_message() {
-	    Assert.assertTrue(true);
+		Alert al=driver.switchTo().alert();
+		String text1 = al.getText();
+		Assert.assertEquals(text1,"please fill all fields Correct Value");
+	    
 	}
 
 

@@ -24,7 +24,7 @@ public class EmptyForm1 extends Home{
 	public void the_user_should_see_the_Alert_message() {
 	    Alert al=driver.switchTo().alert();
 	    String text1 = al.getText();
-	    Assert.assertEquals(text1,"please fill all fields");
+	    Assert.assertEquals(text1,"please fill all fields Correct Value");
 	}
 	
 
